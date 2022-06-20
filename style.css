@@ -1,20 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
+:root {
+    --gold: #FCA311;
+    --bg: #071738;
+    --text: rgb(179, 227, 255);
+}
+
 body {
     font-family: 'Inconsolata', monospace;
 
-    background-color: #071738;
-    color: #FCA311;
+    background-color: white;
+    color: var(black);
 }
 
 p {
+    color: --text;
+}
+
+
+.tag_container {
+    display: flex;
+    gap: 10px;
+}
+
+.rect_background {
+    padding: 10px 20px;
+    text-align: center;
     color: white;
+    background: rgb(255, 172, 18);
+    border-radius: 10%;
 }
 
 .sidebar {
     height: 100%;
     /* Full-height: remove this if you want "auto" height */
-    width: 160px;
+    width: 500px;
     /* Set the width of the sidebar */
     position: fixed;
     /* Fixed Sidebar (stay in place on scroll) */
@@ -23,7 +43,6 @@ p {
     top: 0;
     /* Stay at the top */
     left: 0;
-    background-color: #111;
     /* Black */
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -32,7 +51,19 @@ p {
 
 /* Style page content */
 .main {
-    margin-left: 160px;
+    margin-left: 500px;
     /* Same as the width of the sidebar */
     padding: 0px 10px;
+}
+
+img {
+    margin-left: 40px;
+    border-radius: 10%;
+}
+
+
+.academics {
+    line-height: 0px;
+    display: flex;
+    flex-direction: column;
 }
