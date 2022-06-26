@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 :root {
-    --gold: #FCA311;
+    --button: rgb(10, 178, 133);
     --bg: #071738;
     --text: rgb(179, 227, 255);
 
@@ -48,8 +48,8 @@ p {
     padding: 10px 20px;
     text-align: center;
     color: white;
-    background: rgb(255, 172, 18);
-    border-radius: 10%;
+    background: var(--button);
+    border-radius: 4px;
 }
 
 .sidebar {
@@ -74,6 +74,10 @@ p {
 
 .smaller_text {
     font-size: 18px;
+}
+
+.bigger_text {
+    font-size: 26px;
 }
 
 .text_box {
@@ -101,13 +105,22 @@ p {
     flex-direction: row;
     width: 400px;
     justify-content: space-around;
+    color: rgb(197, 227, 255);
+}
+
+a {
+    text-decoration: none;
+    /* remove underline */
+    color: inherit;
+    /* remove blue */
 }
 
 /* Style page content */
 .main {
+
     margin-left: 450px;
     /* Same as the width of the sidebar */
-    padding: 0px 10px;
+    padding: 10px 10px;
 }
 
 .gradient {
@@ -132,4 +145,24 @@ img {
 
 .line_height {
     line-height: 20px;
+}
+
+
+.card {
+    padding: 5px 10px;
+    width: 400px;
+    border-radius: 4px;
+    background-color: rgb(47, 50, 88);
+}
+
+.exp {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.proj {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
