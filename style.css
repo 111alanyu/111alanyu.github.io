@@ -4,7 +4,7 @@
     --button: rgb(10, 178, 133);
     --bg: #071738;
     --text: rgb(179, 227, 255);
-
+    --how_far_sidebar: 350px;
 }
 
 body {
@@ -16,8 +16,8 @@ body {
 }
 
 .all {
-    max-width: 960px;
     margin: auto;
+    width: 1000px;
 }
 
 
@@ -43,9 +43,13 @@ p {
     gap: 10px;
 }
 
+.BiggerFont {
+    font-size: 20px;
+}
+
 
 .rect_background {
-    padding: 10px 20px;
+    padding: 5px 10px;
     text-align: center;
     color: white;
     background: var(--button);
@@ -55,7 +59,7 @@ p {
 .sidebar {
     height: 100%;
     /* Full-height: remove this if you want "auto" height */
-    width: 400px;
+    width: var(--how_far_sidebar);
     /* Set the width of the sidebar */
     position: fixed;
     /* Fixed Sidebar (stay in place on scroll) */
@@ -67,18 +71,19 @@ p {
     overflow-x: hidden;
     /* Disable horizontal scroll */
     padding-top: 20px;
-    padding-left: 10px;
     display: flex;
     flex-direction: column;
+    padding: 0px 30px;
+    overflow: hidden;
+    /* Hide scrollbars */
+
 }
 
 .smaller_text {
-    font-size: 18px;
+    font-size: 16px;
 }
 
-.bigger_text {
-    font-size: 26px;
-}
+
 
 .text_box {
     background-color: rgb(40, 54, 72);
@@ -97,13 +102,12 @@ p {
     width: 300px;
     color: --text;
     line-height: 20px;
-    align-items: center;
 }
 
 .icons {
     display: flex;
     flex-direction: row;
-    width: 400px;
+    width: 350px;
     justify-content: space-around;
     color: rgb(197, 227, 255);
 }
@@ -115,12 +119,14 @@ a {
     /* remove blue */
 }
 
+.center {
+    text-align: center;
+}
+
 /* Style page content */
 .main {
-
-    margin-left: 450px;
-    /* Same as the width of the sidebar */
-    padding: 10px 10px;
+    position: relative;
+    left: 400px;
 }
 
 .gradient {
@@ -143,9 +149,6 @@ img {
     background-color: rgb(40, 54, 72);
 }
 
-.line_height {
-    line-height: 20px;
-}
 
 
 .card {
