@@ -60,11 +60,9 @@ body {
     margin: 10px;
     border-radius: 5px;
     text-align: center;
-    transition: all 20.5s ease;
 }
 
 .long_card:hover {
-    height: 400px;
     box-shadow: 0 16px 32px 0 rgba(155, 155, 155, 0.2);
 }
 
