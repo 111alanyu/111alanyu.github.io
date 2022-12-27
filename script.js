@@ -1,5 +1,9 @@
 var coll = document.getElementsByClassName("long_card");
+
+
 var i;
+console.log(coll);
+console.log(coll.length);
 
 for (i = 0; i < coll.length; i++) {
     console.log("Hello");

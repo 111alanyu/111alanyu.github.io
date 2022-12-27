@@ -55,6 +55,8 @@ html {
 }
 
 body {
+    max-width: 1600px;
+    margin: auto;
     color: rgb(220, 220, 220);
     background-color: rgb(6, 6, 25);
     font-family: sans-serif
@@ -62,30 +64,85 @@ body {
 
 
 .content {
-    padding: 0 18px;
     display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
+    transition: 3s;
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(6, 6, 25);
+    color: rgb(220, 220, 220);
+    padding-left: 100px;
+    text-align: left;
+    /*
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgb(178, 178, 178);
+    */
+}
+
+.long_card_e {
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 0;
+    padding: 15px;
+    /*box-shadow: 0 4px 8px 0 rgba(152, 116, 188, 0.2);*/
+    transition: 0.3s;
+    width: 100%;
+    margin: 10px, 0px, 0px, 0px;
+    border-radius: 5px;
+    text-align: center;
+    /*background-color: rgba(0, 143, 200, 0.14);*/
+    background-color: inherit;
+    color: rgb(220, 220, 220);
+    cursor: pointer;
+
+    /*
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgb(178, 178, 178);
+    */
 }
 
 
 .long_card {
-    box-shadow: 0 4px 8px 0 rgba(152, 116, 188, 0.2);
+
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 0;
+    padding: 15px;
+    /*box-shadow: 0 4px 8px 0 rgba(152, 116, 188, 0.2);*/
     transition: 0.3s;
-    width: 90%;
-    padding: 10px;
-    margin: 10px;
+    width: 80%;
+    margin: 10px, 0px, 0px, 0px;
     border-radius: 5px;
     text-align: center;
+    /*background-color: rgba(0, 143, 200, 0.14);*/
+    background-color: inherit;
+    color: rgb(220, 220, 220);
+    cursor: pointer;
 
-
+    /*
     outline-style: solid;
     outline-width: 2px;
-    outline-color: white;
+    outline-color: rgb(178, 178, 178);
+    */
 }
 
+.active,
 .long_card:hover {
-    box-shadow: 0 16px 32px 0 rgba(155, 155, 155, 0.2);
+    background-color: rgb(31, 15, 73);
+}
+
+.long_card_e:hover {
+    background-color: rgb(31, 15, 73);
+}
+
+
+.long_card:hover {
+
+    /*box-shadow: 0 16px 32px 0 rgba(155, 155, 155, 0.2);*/
 }
 
 
@@ -142,13 +199,13 @@ body {
 }
 
 .col_1 {
-    width: 500px;
+    width: 550px;
     display: flex;
     flex-direction: column;
 }
 
 .col_2 {
-
+    width: 1000px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
