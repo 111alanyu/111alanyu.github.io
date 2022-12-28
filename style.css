@@ -1,5 +1,13 @@
 .summary {}
 
+:root {
+    --active-color: rgb(37, 37, 37);
+    --background-color: rgb(12, 12, 12);
+    /*
+    6,6,25
+    */
+}
+
 #container {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -57,7 +65,7 @@ body {
     max-width: 1600px;
     margin: auto;
     color: rgb(220, 220, 220);
-    background-color: rgb(6, 6, 25);
+    background-color: var(--background-color);
     font-family: sans-serif
 }
 
@@ -65,12 +73,13 @@ body {
 .content {
     display: none;
     transition: 3s;
-    width: 80%;
-    border-radius: 5px;
+    width: inherit;
     text-align: center;
-    background-color: rgb(6, 6, 25);
-    color: rgb(220, 220, 220);
+    font-size: 15px;
+
+    background-color: var(--active-color);
     padding-left: 100px;
+    padding-right: 10px;
     text-align: left;
     /*
     outline-style: solid;
@@ -80,9 +89,11 @@ body {
 }
 
 .long_card_e {
+    box-shadow: 0 4px 8px 0 rgba(165, 140, 189, 0.2);
+
     outline: none;
     border: none;
-    font-size: 20px;
+    font-size: 15px;
     padding: 0;
     padding: 15px;
     /*box-shadow: 0 4px 8px 0 rgba(152, 116, 188, 0.2);*/
@@ -105,6 +116,7 @@ body {
 
 
 .long_card {
+    box-shadow: 0 4px 8px 0 rgba(152, 116, 188, 0.2);
 
     outline: none;
     border: none;
@@ -113,7 +125,6 @@ body {
     padding: 15px;
     /*box-shadow: 0 4px 8px 0 rgba(152, 116, 188, 0.2);*/
     transition: 0.3s;
-    width: 80%;
     margin: 10px, 0px, 0px, 0px;
     border-radius: 5px;
     text-align: center;
@@ -131,11 +142,13 @@ body {
 
 .active,
 .long_card:hover {
-    background-color: rgb(31, 15, 73);
+    border-radius: 0;
+    box-shadow: none;
+    background-color: var(--active-color);
 }
 
 .long_card_e:hover {
-    background-color: rgb(31, 15, 73);
+    background-color: var(--active-color);
 }
 
 
@@ -155,11 +168,8 @@ body {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(152, 116, 188, 0.2);
-    transition: 0.3s;
 
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: white;
+
 
     padding: 10px;
     margin: 10px;
@@ -198,7 +208,7 @@ body {
 }
 
 .col_1 {
-    margin-left: 25px;
+    margin-left: 50px;
     width: 550px;
     display: flex;
     flex-direction: column;
@@ -216,15 +226,15 @@ body {
     overflow-x: hidden;
     /* Disable horizontal scroll */
     padding-top: 20px;
-
 }
 
 .col_2 {
-    margin-left: 550px;
-    width: 1000px;
+    margin-left: 600px;
+    width: 800px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 .intro_background {}

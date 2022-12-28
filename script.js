@@ -1,4 +1,4 @@
-var coll = document.getElementsByClassName("long_card");
+var coll = document.querySelectorAll(".long_card, .long_card_e");
 
 
 var i;
