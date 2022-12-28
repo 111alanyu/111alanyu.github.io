@@ -74,7 +74,7 @@ body {
 
 
 .content {
-    width: inherit;
+    width: 100%;
     display: none;
     transition: 3s;
     font-size: 15px;
@@ -214,7 +214,7 @@ body {
 
 .col_1 {
     margin-left: 10px;
-    width: 400px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -237,12 +237,13 @@ body {
 }
 
 .col_2 {
-    margin-left: 500px;
-    width: 840px;
+    margin-left: 40%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     overflow-x: hidden;
+    justify-content: center;
 }
 
 .intro_background {}
