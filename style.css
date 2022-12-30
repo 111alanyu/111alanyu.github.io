@@ -1,32 +1,22 @@
 .summary {}
 
 
-@media (min-width: 768px) {
-    :root {
-        --active-color: rgb(59, 59, 59);
-        --background-color: rgb(12, 12, 12);
+@media (min-width: 768px) {}
 
-        --normal-font: 1.2vw;
-        /*
-        6,6,25
-        */
 
-    }
 
-}
 
 
 :root {
     --active-color: rgb(59, 59, 59);
     --background-color: rgb(12, 12, 12);
 
-    --normal-font: 1.5vh;
-
-    /*
+    --normal-font: 105%
+        /*
     6,6,25
     */
-}
 
+}
 
 #container {
     -webkit-box-sizing: border-box;
@@ -66,7 +56,7 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    font-size: 450%;
+    font-size: 350%;
 }
 
 .header_2 {
@@ -90,7 +80,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 1400px;
+    max-width: 1100px;
     margin: auto;
 
 }
