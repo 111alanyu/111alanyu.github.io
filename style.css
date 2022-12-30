@@ -208,7 +208,8 @@ body {
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(152, 116, 188, 0.2);
+    outline: 2px solid #adadad;
+    outline-style: solid;
 
     border-radius: 5px;
     text-align: center;
@@ -291,7 +292,8 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    gap: auto;
+
+    row-gap: 20px;
 }
 
 .company_name {
