@@ -90,7 +90,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 
 }
@@ -218,7 +218,7 @@ body {
 }
 
 .card:hover {
-    box-shadow: 0 16px 32px 0 rgba(186, 186, 186, 0.2);
+    box-shadow: 0 16px 32px 0 rgba(186, 186, 186, 0.368);
 }
 
 .info {
