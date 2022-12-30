@@ -1,20 +1,37 @@
 .summary {}
 
+
+@media (min-width: 768px) {
+    :root {
+        --active-color: rgb(59, 59, 59);
+        --background-color: rgb(12, 12, 12);
+
+        --normal-font: 1.2vw;
+        /*
+        6,6,25
+        */
+
+    }
+
+}
+
+
 :root {
     --active-color: rgb(59, 59, 59);
     --background-color: rgb(12, 12, 12);
 
+    --normal-font: 1.5vh;
 
     /*
     6,6,25
     */
 }
 
+
 #container {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    min-width: 480px;
-    padding: 20px;
+
     width: 100%;
 }
 
@@ -30,13 +47,9 @@ html {
 .topbar {
 
     background-image: rgb(0, 255, 170);
-    height: 20px;
     width: 100%;
 }
 
-.off_set {
-    padding-left: 20px;
-}
 
 .skills {
     text-align: left;
@@ -48,39 +61,48 @@ html {
 }
 
 
-
-
 .header {
-    background: -webkit-linear-gradient(left, rgb(12, 136, 138) 0%, rgb(12, 168, 80) 48%);
+    background: -webkit-linear-gradient(left, rgb(16, 162, 164) 0%, rgb(12, 168, 80) 48%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    font-size: 350%;
+    font-size: 450%;
 }
 
 .header_2 {
-    font-size: 200%;
+    font-size: 250%;
 }
 
 body {
-    max-width: 1440px;
+
     color: rgb(220, 220, 220);
     background-color: var(--background-color);
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: var(--normal-font);
+    margin: 2%;
+
+
     /* Hide scrollbars */
 
 }
 
+.everything {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+
+}
 
 
 
 
 .content {
-    width: 100%;
+    width: 95%;
     display: none;
 
-    font-size: 14px;
+    font-size: var(--normal-font);
     background-color: var(--active-color);
 
 
@@ -99,33 +121,11 @@ body {
 }
 
 .indent {
-    padding-left: 15px;
-    width: 100%
+    padding-left: 1%;
+    width: 98%
 }
 
-.long_card_e {
-    box-shadow: 0 4px 8px 0 rgba(165, 140, 189, 0.2);
 
-    outline: none;
-    border: none;
-    font-size: 14px;
-
-    padding: 15px;
-    /*box-shadow: 0 4px 8px 0 rgba(152, 116, 188, 0.2);*/
-
-    width: 100%;
-    text-align: center;
-    /*background-color: rgba(0, 143, 200, 0.14);*/
-    background-color: inherit;
-    color: rgb(220, 220, 220);
-    cursor: pointer;
-
-    /*
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: rgb(178, 178, 178);
-    */
-}
 
 
 .better_text {
@@ -134,11 +134,13 @@ body {
 }
 
 .long_card {
-    box-shadow: 0 4px 8px 0 rgba(152, 116, 188, 0.2);
+    outline: 2px solid #adadad;
+    outline-style: solid;
 
-    outline: none;
-    border: none;
-    font-size: 14px;
+
+
+
+    font-size: var(--normal-font);
     padding: 15px;
     /*box-shadow: 0 4px 8px 0 rgba(152, 116, 188, 0.2);*/
     transition: 0.3s;
@@ -147,7 +149,9 @@ body {
     background-color: inherit;
     color: rgb(220, 220, 220);
     cursor: pointer;
-    width: 100%;
+    width: 95%;
+
+
 
     /*
     outline-style: solid;
@@ -165,13 +169,13 @@ body {
 
     outline: none;
     border: none;
-    font-size: 14px;
+    font-size: var(--normal-font);
 
 
     /*background-color: rgba(0, 143, 200, 0.14);*/
 
     cursor: pointer;
-    width: 100%;
+
 }
 
 .active,
@@ -183,13 +187,13 @@ body {
 
     outline: none;
     border: none;
-    font-size: 14px;
+    font-size: var(--normal-font);
 
 
     /*background-color: rgba(0, 143, 200, 0.14);*/
 
     cursor: pointer;
-    width: 100%;
+
 }
 
 
@@ -208,8 +212,8 @@ body {
 
     border-radius: 5px;
     text-align: center;
-    width: 70px;
-    height: 50px;
+    width: 120px;
+    height: 120%;
 }
 
 .card:hover {
@@ -286,8 +290,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    gap: 8px;
+    justify-content: space-around;
+    gap: auto;
 }
 
 .company_name {
@@ -338,7 +342,7 @@ img {
 /* Caption text */
 .text {
     color: #f2f2f2;
-    font-size: 15px;
+    font-size: var(--normal-font);
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
