@@ -69,7 +69,9 @@ body {
     background-color: var(--background-color);
     font-family: sans-serif;
     font-size: var(--normal-font);
-    margin: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
 
 
     /* Hide scrollbars */
@@ -204,7 +206,9 @@ body {
     border-radius: 5px;
     text-align: center;
     width: 120px;
-    height: 120%;
+    height: 100%;
+    transition: 0.1s;
+
 }
 
 .card:hover {
@@ -282,7 +286,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-
     row-gap: 20px;
 }
 
