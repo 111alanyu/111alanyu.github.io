@@ -104,7 +104,7 @@ body {
 
     align-items: center;
     z-index: 100;
-    border-top: 1px solid #adadad;
+    border-top: 2px solid #adadad;
     border-top-style: dotted;
 
     /*
@@ -345,7 +345,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 1200px;
     position: relative;
     margin: auto;
 }
