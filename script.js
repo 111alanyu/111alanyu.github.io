@@ -15,15 +15,19 @@ for (i = 0; i < coll.length; i++) {
 }
 
 
-
+const expand = document.querySelector(".expand");
 expand_all[0].addEventListener("click", function () {
     for (i = 0; i < coll.length; i++) {
         coll[i].classList.toggle("active");
         var content = coll[i].nextElementSibling;
         if (content.style.display === "block") {
             content.style.display = "none";
+            expand.innerHTML = " <i class=\"fa-solid fa-up-right-and-down-left-from-center\"></i>"
         } else {
             content.style.display = "block";
+            expand.innerHTML = "<i class=\"fa-solid fa-down-left-and-up-right-to-center\"></i>";
+
+
         }
     }
 
@@ -32,9 +36,10 @@ expand_all[0].addEventListener("click", function () {
 
 
 const toggleButton = document.querySelector('.dark-light');
-console.log(coll)
+console.log(coll);
 const contact_me_icons = document.querySelectorAll('.icon_color');
-console.log(contact_me_icons)
+const mode_light = document.querySelector(".dark-light");
+console.log(contact_me_icons);
 let isDarkMode = true;
 document.body.classList.toggle('dark', isDarkMode);
 
@@ -45,13 +50,14 @@ function toggleDarkMode() {
         console.log("dark");
         for (const contact_me_icon of contact_me_icons) {
             contact_me_icon.style.color = 'rgb(255, 255, 255)';
+            mode_light.innerHTML = "<i class=\"fa-regular fa-sun\"></i>";
         }
 
     } else {
         console.log("light");
         for (const contact_me_icon of contact_me_icons) {
             contact_me_icon.style.color = 'rgb(0, 0, 0)';
-
+            mode_light.innerHTML = "<i class=\"fa-regular fa-moon\"></i>";
         }
 
     }
