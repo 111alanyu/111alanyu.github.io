@@ -22,7 +22,7 @@ expand_all[0].addEventListener("click", function () {
         var content = coll[i].nextElementSibling;
         if (content.style.display === "block") {
             content.style.display = "none";
-            expand.innerHTML = "test <i class=\"fa-solid fa-up-right-and-down-left-from-center\"></i>"
+            expand.innerHTML = "<i class=\"fa-solid fa-up-right-and-down-left-from-center\"></i>"
         } else {
             content.style.display = "block";
             expand.innerHTML = "<i class=\"fa-solid fa-down-left-and-up-right-to-center\"></i>";
