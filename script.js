@@ -1,9 +1,8 @@
 var coll = document.querySelectorAll(".long_card, .long_card_e");
-
+var expand_all = document.querySelectorAll("expand");
 
 var i;
 for (i = 0; i < coll.length; i++) {
-    console.log("Hello");
     coll[i].addEventListener("click", function () {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
@@ -14,6 +13,9 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+
+
 
 
 
