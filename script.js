@@ -2,9 +2,6 @@ var coll = document.querySelectorAll(".long_card, .long_card_e");
 
 
 var i;
-console.log(coll);
-console.log(coll.length);
-
 for (i = 0; i < coll.length; i++) {
     console.log("Hello");
     coll[i].addEventListener("click", function () {
@@ -17,6 +14,24 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+
+
+const toggleButton = document.querySelector('.dark-light');
+let isDarkMode = true;
+document.body.classList.toggle('dark', isDarkMode);
+
+
+function toggleDarkMode() {
+    isDarkMode = !isDarkMode;
+    document.body.classList.toggle('dark', isDarkMode);
+    document.body.classList.toggle('light', !isDarkMode);
+}
+
+// Add an event listener to the toggle button
+toggleButton.addEventListener('click', toggleDarkMode);
+
+
 
 let slideIndex = 0;
 showSlides();
