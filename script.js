@@ -1,6 +1,5 @@
 var coll = document.querySelectorAll(".long_card, .long_card_e");
-var expand_all = document.querySelectorAll("expand");
-
+var expand_all = document.querySelectorAll(".expand");
 var i;
 for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function () {
@@ -17,16 +16,45 @@ for (i = 0; i < coll.length; i++) {
 
 
 
+expand_all[0].addEventListener("click", function () {
+    for (i = 0; i < coll.length; i++) {
+        coll[i].classList.toggle("active");
+        var content = coll[i].nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }
+
+});
 
 
 
 const toggleButton = document.querySelector('.dark-light');
+console.log(coll)
+const contact_me_icons = document.querySelectorAll('.icon_color');
+console.log(contact_me_icons)
 let isDarkMode = true;
 document.body.classList.toggle('dark', isDarkMode);
 
 
 function toggleDarkMode() {
     isDarkMode = !isDarkMode;
+    if (isDarkMode) {
+        console.log("dark");
+        for (const contact_me_icon of contact_me_icons) {
+            contact_me_icon.style.color = 'rgb(255, 255, 255)';
+        }
+
+    } else {
+        console.log("light");
+        for (const contact_me_icon of contact_me_icons) {
+            contact_me_icon.style.color = 'rgb(0, 0, 0)';
+
+        }
+
+    }
     document.body.classList.toggle('dark', isDarkMode);
     document.body.classList.toggle('light', !isDarkMode);
 }

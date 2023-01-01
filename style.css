@@ -9,19 +9,12 @@
     color: rgb(255, 255, 255);
 }
 
-
-.icon_color {
-    color: rgb(255, 255, 255);
-}
-
 */
 
 
 
-
-
 .icon_color {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -75,15 +68,14 @@ html {
 }
 
 
-:active.dark-light {
-    color: red;
-    cursor: pointer;
-}
 
-:active.expand {
-    color: blue;
-    cursor: pointer;
 
+
+.light {
+    --active-color: rgb(218, 218, 218);
+    --background-color: rgb(255, 255, 255);
+    --normal-font: 110%;
+    color: black;
 }
 
 .dark {
@@ -91,13 +83,6 @@ html {
     --background-color: rgb(12, 12, 12);
     --normal-font: 110%;
     color: white;
-}
-
-.light {
-    --active-color: rgb(218, 218, 218);
-    --background-color: rgb(255, 255, 255);
-    --normal-font: 110%;
-    color: black;
 }
 
 
