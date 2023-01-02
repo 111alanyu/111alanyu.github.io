@@ -14,7 +14,7 @@ for (i = 0; i < coll.length; i++) {
 
 }
 
-
+/** Make expand so that it expands all not togles all */
 const expand = document.querySelector(".expand");
 expand_all[0].addEventListener("click", function () {
     for (i = 0; i < coll.length; i++) {
@@ -50,7 +50,7 @@ function toggleDarkMode() {
         console.log("dark");
         for (const contact_me_icon of contact_me_icons) {
             contact_me_icon.style.color = 'rgb(255, 255, 255)';
-            mode_light.innerHTML = "<i class=\"fa-regular fa-sun\"></i>";
+            mode_light.innerHTML = "<i class=\"fa-solid fa-lightbulb\"></i>";
         }
 
     } else {
