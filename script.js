@@ -90,13 +90,13 @@ let slideIndex_2 = 0;
 showSlides_2();
 function showSlides_2() {
     let i;
-    let slides = document.getElementsByClassName("mySlides_2");
+    let slides2 = document.getElementsByClassName("mySlides_2");
 
-    for (i = 0; i < slides_2.length; i++) {
-        slides[i].style.display = "none";
+    for (i = 0; i < slides2.length; i++) {
+        slides2[i].style.display = "none";
     }
     slideIndex_2++;
-    if (slideIndex_2 > slides.length) { slideIndex_2 = 1 }
-    slides[slideIndex_2 - 1].style.display = "block";
+    if (slideIndex_2 > slides2.length) { slideIndex_2 = 1 }
+    slides2[slideIndex_2 - 1].style.display = "block";
     setTimeout(showSlides_2, 4000); // Change image every 2 seconds
 }
