@@ -36,10 +36,8 @@ expand_all[0].addEventListener("click", function () {
 
 
 const toggleButton = document.querySelector('.dark-light');
-console.log(coll);
 const contact_me_icons = document.querySelectorAll('.icon_color');
 const mode_light = document.querySelector(".dark-light");
-console.log(contact_me_icons);
 let isDarkMode = true;
 document.body.classList.toggle('dark', isDarkMode);
 
