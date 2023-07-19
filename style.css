@@ -130,7 +130,6 @@ body {
 
 
 .content {
-    width: 95%;
     display: none;
 
     font-size: var(--normal-font);
