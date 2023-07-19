@@ -39,29 +39,10 @@ const toggleButton = document.querySelector('.dark-light');
 const contact_me_icons = document.querySelectorAll('.icon_color');
 const mode_light = document.querySelector(".dark-light");
 let isDarkMode = true;
+
+
 document.body.classList.toggle('dark', isDarkMode);
 
-
-function toggleDarkMode() {
-    isDarkMode = !isDarkMode;
-    if (isDarkMode) {
-        console.log("dark");
-        for (const contact_me_icon of contact_me_icons) {
-            contact_me_icon.style.color = 'rgb(255, 255, 255)';
-            mode_light.innerHTML = "<i class=\"fa-solid fa-lightbulb\"></i>";
-        }
-
-    } else {
-        console.log("light");
-        for (const contact_me_icon of contact_me_icons) {
-            contact_me_icon.style.color = 'rgb(0, 0, 0)';
-            mode_light.innerHTML = "<i class=\"fa-regular fa-moon\"></i>";
-        }
-
-    }
-    document.body.classList.toggle('dark', isDarkMode);
-    document.body.classList.toggle('light', !isDarkMode);
-}
 
 // Add an event listener to the toggle button
 toggleButton.addEventListener('click', toggleDarkMode);

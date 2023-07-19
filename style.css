@@ -20,8 +20,6 @@
 
 
 
-.settings {}
-
 #container {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -72,23 +70,23 @@ html {
 
 
 .light {
-    --active-color: rgb(218, 218, 218);
-    --background-color: rgb(255, 255, 255);
-    --normal-font: 110%;
+    --active-color: rgb(230, 230, 230);
+    --background-color: rgb(243, 243, 243);
+    --normal-font: 100%;
     color: black;
 }
 
 .dark {
     --active-color: rgb(59, 59, 59);
-    --background-color: rgb(12, 12, 12);
-    --normal-font: 110%;
+    --background-color: rgb(27, 27, 27);
+    --normal-font: 101%;
     color: white;
 }
 
 
 
 .header {
-    background: -webkit-linear-gradient(left, rgb(20, 214, 218) 0%, rgb(15, 207, 98) 48%);
+    background: rgb(255, 255, 255);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -97,7 +95,7 @@ html {
 }
 
 h2 {
-    background: rgb(22, 218, 182);
+    background: rgb(255, 255, 255);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -172,25 +170,13 @@ body {
 
 
 
-
     font-size: var(--normal-font);
     padding: 15px;
-    /*box-shadow: 0 4px 8px 0 rgba(152, 116, 188, 0.2);*/
     transition: 0.3s;
     text-align: center;
-    /*background-color: rgba(0, 143, 200, 0.14);*/
     background-color: inherit;
     color: inherit;
     cursor: pointer;
-    width: 95%;
-
-
-
-    /*
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: rgb(178, 178, 178);
-    */
 }
 
 .active,
@@ -240,6 +226,14 @@ body {
     gap: 12px;
 }
 
+
+.card_icon {
+
+    width: 100px;
+    transition: 0.1s;
+
+}
+
 .card {
     outline: 2px solid #adadad;
     outline-style: solid;
@@ -250,9 +244,6 @@ body {
     width: 100px;
     height: 100%;
     transition: 0.1s;
-
-
-
 
 }
 
@@ -269,10 +260,6 @@ body {
     padding: 2px 16px;
 }
 
-.current {}
-
-
-.industry {}
 
 .technology {
 
@@ -281,7 +268,6 @@ body {
     width: 100%;
 }
 
-.academia {}
 
 .row {
     display: flex;
@@ -324,7 +310,6 @@ body {
     justify-content: center;
 }
 
-.intro_background {}
 
 .icons {
     display: flex;
@@ -342,12 +327,12 @@ body {
 a,
 a:hover,
 a:active {
-    color: rgb(246, 196, 31);
+    color: rgb(59, 160, 255);
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(220, 115, 17)
+    color: rgb(85, 25, 236)
 }
 
 
@@ -447,4 +432,34 @@ img {
     .text {
         font-size: 11px
     }
+}
+
+
+
+
+#projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#projects-list h3 {
+    margin: 0 auto 0.2rem;
+}
+
+#projects-list .box {
+    margin: 0.5rem 0.4rem;
+    padding: 1rem 1.2rem 1.4rem;
+    background-color: var(--gray-4);
+    border: var(--border);
+
+
+    outline: 2px solid #adadad;
+    outline-style: solid;
+
+
+}
+
+
+.diny {
+    margin: 0.5rem 0.4rem;
 }
