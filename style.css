@@ -196,26 +196,6 @@ body {
 
 }
 
-.active,
-.long_card_e:hover {
-    border-radius: 0;
-    box-shadow: none;
-    background-color: var(--active-color);
-
-
-    outline: none;
-    border: none;
-    font-size: var(--normal-font);
-
-
-    /*background-color: rgba(0, 143, 200, 0.14);*/
-
-    cursor: pointer;
-
-}
-
-
-
 
 
 .icon_space_text {
@@ -436,27 +416,41 @@ img {
 
 
 
-#projects-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#projects-list h3 {
-    margin: 0 auto 0.2rem;
-}
 
-#projects-list .box {
-    margin: 0.5rem 0.4rem;
-    padding: 1rem 1.2rem 1.4rem;
-    background-color: var(--gray-4);
-    border: var(--border);
+
+.box {
+
+    transition: 0.3s;
+    margin: 0.5rem 0.6rem;
+    padding: 15px;
 
 
     outline: 2px solid #adadad;
     outline-style: solid;
+    width: 205px;
+}
 
+.active,
+.box:hover {
+    border-radius: 0;
+    box-shadow: none;
+    background-color: var(--active-color);
+
+
+    outline: 2px solid transparent;
+    border: none;
+    font-size: var(--normal-font);
+
+    cursor: pointer;
 
 }
+
 
 
 .diny {
