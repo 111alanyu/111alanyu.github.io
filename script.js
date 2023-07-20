@@ -44,8 +44,7 @@ let isDarkMode = true;
 document.body.classList.toggle('dark', isDarkMode);
 
 
-// Add an event listener to the toggle button
-toggleButton.addEventListener('click', toggleDarkMode);
+
 
 
 
