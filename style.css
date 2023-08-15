@@ -306,14 +306,18 @@ body {
 a,
 a:hover,
 a:active {
-    color: rgb(59, 160, 255);
+    color: rgb(84, 171, 253);
     text-decoration: none;
 }
 
 a:visited {
-    color: rgb(85, 25, 236)
+    color: rgb(162, 125, 255)
 }
 
+.column_edu {
+    width: 50%;
+    float: left;
+}
 
 
 .icons:hover,
